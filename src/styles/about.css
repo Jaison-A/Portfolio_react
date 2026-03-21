@@ -1,0 +1,35 @@
+/* About component */
+.about {
+  padding: 60px 40px;
+  background: #f4f4f4;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-info {
+  margin-top: 20px;
+}

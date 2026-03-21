@@ -1,0 +1,43 @@
+/* footer component */
+.footer {
+  background: #222;
+  color: white;
+  padding: 20px 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-socials a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #00adb5;
+}
+
+.top-btn {
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.top-btn:hover {
+  color: #00adb5;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 240px;
+  align-items: center;
+}
+.footer-name {
+  color: #00adb5;
+  font-weight: bold;
+}

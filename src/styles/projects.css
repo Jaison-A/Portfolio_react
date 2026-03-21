@@ -1,0 +1,48 @@
+/* Projects component */
+.projects {
+  padding: 60px 40px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.project-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #00adb5;
+  font-weight: bold;
+}
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card img {
+  transition: 0.3s;
+}

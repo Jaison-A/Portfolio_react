@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+.home-buttons .btn,
+.contact-form button,
+.resume-btn {
+  transition: all 0.3s ease;
+}
+.project-card:hover,
+.cert-card:hover,
+.skill-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 173, 181, 0.2);
+}
+
+/* ===== LIGHT MODE ===== */
+
+body.light-mode {
+  background: #ffffff;
+  color: #222;
+}
+body.light-mode .theme-btn {
+  color: #222;
+}
+
+body.light-mode .about,
+body.light-mode .projects,
+body.light-mode .contact {
+  background: #f9f9f9;
+}
+
+body.light-mode .skills,
+body.light-mode .certifications {
+  background: #ffffff;
+}
+body.light-mode .category {
+  background: #f5f5f5;
+  color: #222;
+}
+
+body.light-mode .skill-bar {
+  background-color: #ddd;
+}
+
+body.light-mode .skill-fill {
+  background-color: #007bff;
+}
+body.light-mode .project-card,
+body.light-mode .cert-card {
+  background: #ffffff;
+  color: #222;
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+/* ===== DARK MODE ENHANCEMENT ===== */
+
+body {
+  background: #111;
+  color: #eee;
+}
+
+.about,
+.projects,
+.contact {
+  background: #1a1a1a;
+}
+
+.skills,
+.certifications {
+  background: #111;
+}
+.category {
+  background: #1f1f1f;
+  color: #eee;
+}
+
+.skill-bar {
+  background-color: #333;
+}
+
+.skill-fill {
+  background-color: #00adb5;
+}
+
+.project-card,
+.cert-card {
+  background: #1f1f1f;
+  color: #eee;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.footer {
+  background: #000;
+}
+
+body,
+.navbar,
+section,
+.project-card,
+.skill-card,
+.cert-card,
+.footer,
+input,
+textarea {
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+body:not(.light-mode) .social-links a:hover {
+  background: rgba(0, 173, 181, 0.2);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #222;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .home {
+    background: url('../assets/hero-img.jpeg') no-repeat center center/cover;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 200px;
+  }
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-icons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
