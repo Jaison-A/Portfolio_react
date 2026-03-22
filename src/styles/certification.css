@@ -7,7 +7,10 @@
 
 .cert-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* this line is whta capable of making that colomn ...  */
   gap: 25px;
   margin-top: 30px;
 }
@@ -19,6 +22,8 @@
   text-align: left;
   transition: 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 425px;
+  overflow: hidden;
 }
 
 .cert-card:hover {
@@ -31,4 +36,7 @@
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+.cert-card .desPara {
+  padding: 8px 5px;
 }

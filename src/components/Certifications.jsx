@@ -1,24 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Certifications() {
-  const certifications = [
-    {
-      title: 'Frontend Development Training',
-      issuer: 'Elocias Software Pvt Ltd',
-      date: '2025',
-      description:
-        'Completed industrial training in HTML, CSS, and JavaScript with hands-on project experience.',
-      image: 'https://picsum.photos/1920/1080?random',
-    },
-    {
-      title: 'Cybersecurity Basics',
-      issuer: 'Online Course',
-      date: '2024',
-      description:
-        'Learned fundamentals of cybersecurity including threats, prevention, and best practices.',
-      image: 'https://picsum.photos/1920/1080?random',
-    },
-  ];
+  const [certifications, setCertifications] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:8000/certification')
+      .then((res) => res.json())
+      .then((data) => setCertifications(data))
+      .catch((err) => console.log(err));
+  });
 
   return (
     <section id="certifications" className="certifications">
@@ -27,15 +16,13 @@ function Certifications() {
       <div className="cert-container">
         {certifications.map((cert, index) => (
           <div key={index} className="cert-card">
-            {/* Image */}
             <img src={cert.image} alt={cert.title} />
 
-            {/* Content */}
             <h3>{cert.title}</h3>
             <p>
               <strong>{cert.issuer}</strong> | {cert.date}
             </p>
-            <p>{cert.description}</p>
+            <p className="desPara">{cert.description}</p>
           </div>
         ))}
       </div>
