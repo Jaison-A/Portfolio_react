@@ -1,0 +1,86 @@
+{
+  "certification": [
+    {
+      "title": "Frontend Development Training",
+      "issuer": "Elocias Software Pvt Ltd",
+      "date": 2025,
+      "description": "Completed industrial training in HTML, CSS, and JavaScript with hands-on project experience.",
+      "image": "../public/Internship-Elocias.jpg"
+    },
+    {
+      "title": "Introduction to Internet of Things",
+      "issuer": "NPTEL, IIT Kharagpur",
+      "date": 2025,
+      "description": "Successfully completed a 12-week course on IoT fundamentals, achieving an Elite certification with a consolidated score of 71%. Covered IoT architecture, applications, and practical insights.",
+      "image": "../public/iot_nptel.jpeg"
+    },
+    {
+      "title": "C Programming Basics: Flow Control, Variables, and Pointers",
+      "issuer": "LinkedIn Learning",
+      "date": 2024,
+      "description": "Completed a 3-hour foundational course on C programming, focusing on variables, flow control, and pointers to strengthen programming fundamentals.",
+      "image": "../public/c-linkedin.jpeg"
+    },
+    {
+      "title": "C Programming",
+      "issuer": "Programming Hero",
+      "date": 2024,
+      "description": "Earned a Certificate of Completion with Excellence in C programming, demonstrating strong problem-solving and coding skills.",
+      "image": "../public/c-pgHero.jpeg"
+    },
+    {
+      "title": "Learn HTML",
+      "issuer": "Codeliber",
+      "date": 2025,
+      "description": "Completed an HTML course via the Learn HTML mobile application, gaining practical knowledge in structuring and designing web pages.",
+      "image": "../public/html-codeliber.jpeg"
+    },
+    {
+      "title": "Java Training",
+      "issuer": "Spoken Tutorial Project, IIT Bombay",
+      "date": 2024,
+      "description": "Successfully completed Java training with a perfect score of 100%. Gained hands-on experience in object-oriented programming and Java application development.",
+      "image": "../public/java-iitbombay.jpeg"
+    },
+    {
+      "title": "Python 3.4.3 Training",
+      "issuer": "Spoken Tutorial Project, IIT Bombay",
+      "date": 2024,
+      "description": "Completed Python training covering core concepts and programming practices. Learned scripting, data handling, and problem-solving using Python.",
+      "image": "../public/python-iitbomby.jpeg"
+    },
+    {
+      "title": "Certified Entry-Level Python Programmer (PCEP-30-02) Cert Prep",
+      "issuer": "LinkedIn Learning",
+      "date": 2024,
+      "description": "Prepared for the PCEP certification exam through a structured course, strengthening Python fundamentals including syntax, data types, and control structures.",
+      "image": "../public/python-linkedin.jpeg"
+    },
+    {
+      "title": "Python Course 2023",
+      "issuer": "Programming Hero",
+      "date": 2024,
+      "description": "Earned a Certificate of Completion with Excellence in Python programming, building a strong foundation in coding and problem-solving.",
+      "image": "../public/python-pgHero.jpeg"
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "TimeZone Watch Website",
+      "description": "A responsive watch product website built using HTML, CSS, and JavaScript.",
+      "tech": "HTML, CSS, JavaScript",
+      "image": "https://picsum.photos/200/300",
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "Personal portfolio website to showcase my skills and projects.",
+      "tech": "React, CSS",
+      "image": "https://picsum.photos/200/300",
+      "github": "#",
+      "live": "#"
+    }
+  ]
+}

@@ -11,10 +11,18 @@ function Footer() {
         </p>
         <div className="footer-icons">
           <div className="footer-socials">
-            <a href="#" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/Jaison-A"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/jaison-a-a97352307"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </a>
           </div>
