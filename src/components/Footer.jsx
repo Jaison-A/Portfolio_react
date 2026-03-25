@@ -26,9 +26,6 @@ function Footer() {
               <FaLinkedin />
             </a>
           </div>
-          <a href="#home" className="top-btn">
-            <FaArrowUp />
-          </a>
         </div>
       </div>
     </footer>

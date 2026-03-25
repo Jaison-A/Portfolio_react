@@ -17,7 +17,7 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            onClick={() => navigate(`/projects/${project.title}`)}
+            onClick={() => navigate(`/projects/${project.id}`)}
             className="project-card"
           >
             <img src={project.image} alt={project.title} />

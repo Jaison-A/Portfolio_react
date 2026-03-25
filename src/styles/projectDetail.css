@@ -1,0 +1,133 @@
+/* ===== PROJECT DETAIL (DEFAULT = DARK MODE) ===== */
+
+.project-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #111;
+  min-height: 100vh;
+}
+
+.project-card {
+  display: flex;
+  max-width: 900px;
+  background: #1f1f1f;
+  color: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 173, 181, 0.2);
+}
+
+/* Image */
+.project-card img {
+  width: 400px;
+  height: 250px;
+  max-height: 300px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Content */
+.project-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.project-content h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.description {
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.tech {
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* GitHub Button */
+.github {
+  background: #333;
+  color: #fff;
+}
+
+.github:hover {
+  background: #000;
+}
+
+/* Live Button */
+.live {
+  background: #00adb5;
+  color: #fff;
+}
+
+.live:hover {
+  background: #007b80;
+}
+
+/* ===== LIGHT MODE ===== */
+
+body.light-mode .project-detail {
+  background: #f4f6f8;
+}
+
+body.light-mode .project-card {
+  background: #fff;
+  color: #222;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .project-content h2 {
+  color: #222;
+}
+
+body.light-mode .description {
+  color: #555;
+}
+
+body.light-mode .tech {
+  color: #333;
+}
+
+body.light-mode .github {
+  background: #24292e;
+}
+body.light-mode .github:hover {
+  background: #6b7177;
+}
+
+body.light-mode .live {
+  background: #007bff;
+}
+body.light-mode .live:hover {
+  background: #0b5aae;
+}

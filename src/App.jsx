@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 // import Footer from './components/Footer';
 import Certifications from './components/Certifications';
 import Home from './components/Home';
+import ProjectDetail from './components/ProjectDetail';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: '/about', element: <About /> },
       { path: '/skills', element: <Skills /> },
       { path: '/projects', element: <Projects /> },
+      { path: '/projects/:id', element: <ProjectDetail /> },
       { path: '/certifications', element: <Certifications /> },
       { path: '/contact', element: <Contact /> },
     ],

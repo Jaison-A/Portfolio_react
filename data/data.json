@@ -67,6 +67,7 @@
 
   "projects": [
     {
+      "id": 1,
       "title": "TimeZone Watch Website",
       "description": "A responsive watch product website built using HTML, CSS, and JavaScript.",
       "tech": "HTML, CSS, JavaScript",
@@ -75,6 +76,7 @@
       "live": "#"
     },
     {
+      "id": 2,
       "title": "Portfolio Website",
       "description": "Personal portfolio website to showcase my skills and projects.",
       "tech": "React, CSS",

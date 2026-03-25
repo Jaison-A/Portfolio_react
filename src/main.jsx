@@ -6,6 +6,7 @@ import './styles/home.css';
 import './styles/about.css';
 import './styles/skills.css';
 import './styles/projects.css';
+import './styles/projectDetail.css';
 import './styles/certification.css';
 import './styles/contact.css';
 import './styles/footer.css';
