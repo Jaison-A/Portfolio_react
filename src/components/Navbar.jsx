@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,34 +39,34 @@ function Navbar() {
           </div>
           <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
             <li>
-              <a href="#home" onClick={() => setMenuOpen(false)}>
+              <Link to="/" onClick={() => setMenuOpen(false)}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" onClick={() => setMenuOpen(false)}>
+              <Link to="/about" onClick={() => setMenuOpen(false)}>
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#skills" onClick={() => setMenuOpen(false)}>
+              <Link to="/skills" onClick={() => setMenuOpen(false)}>
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#projects" onClick={() => setMenuOpen(false)}>
+              <Link to="/projects" onClick={() => setMenuOpen(false)}>
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#certifications" onClick={() => setMenuOpen(false)}>
+              <Link to="/certifications" onClick={() => setMenuOpen(false)}>
                 Certifications
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" onClick={() => setMenuOpen(false)}>
+              <Link to="/contact" onClick={() => setMenuOpen(false)}>
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <a href="../public/resume_jaison.pdf" download>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function Projects() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     fetch('http://localhost:8000/projects')
@@ -17,7 +17,7 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            // onClick={() => navigate(`/${project.title}`)}
+            onClick={() => navigate(`/projects/${project.title}`)}
             className="project-card"
           >
             <img src={project.image} alt={project.title} />
