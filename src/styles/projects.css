@@ -8,12 +8,14 @@
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   margin-top: 30px;
 }
-
 .project-card {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border-radius: 10px;
   text-align: left;
@@ -31,6 +33,7 @@
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
+  display: block;
   transition: 0.3s;
 }
 
@@ -74,4 +77,9 @@ body.light-mode .project-card {
   background: #ffffff;
   color: #222;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
 }
