@@ -1,7 +1,7 @@
-/* About component */
+/* ===== ABOUT COMPONENT ===== */
+
 .about {
   padding: 60px 40px;
-  background: #f4f4f4;
 }
 
 .about-container {
@@ -32,4 +32,25 @@
 
 .about-info {
   margin-top: 20px;
+}
+
+.about {
+  background: #1a1a1a;
+  color: #eee;
+}
+
+body.light-mode .about {
+  background: #f4f4f4;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 200px;
+  }
 }

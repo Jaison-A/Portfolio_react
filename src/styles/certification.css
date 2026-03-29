@@ -1,33 +1,30 @@
-/* Certification Component */
+/* ===== CERTIFICATIONS COMPONENT ===== */
+
 .certifications {
   padding: 60px 40px;
-  background: #fff;
   text-align: center;
+  transition: 0.3s ease;
 }
 
 .cert-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(250px, 1fr)
-  ); /* this line is whta capable of making that colomn ...  */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   margin-top: 30px;
 }
 
 .cert-card {
-  background: #f9f9f9;
   padding: 15px;
   border-radius: 10px;
   text-align: left;
   transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: 425px;
   overflow: hidden;
 }
 
 .cert-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 173, 181, 0.2);
 }
 
 .cert-card img {
@@ -36,7 +33,35 @@
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
+  transition: 0.3s;
 }
+
+.cert-card:hover img {
+  transform: scale(1.05);
+}
+
 .cert-card .desPara {
   padding: 8px 5px;
+}
+
+.certifications {
+  background: #111;
+  color: #eee;
+}
+
+.cert-card {
+  background: #1f1f1f;
+  color: #eee;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode .certifications {
+  background: #fff;
+  color: #222;
+}
+
+body.light-mode .cert-card {
+  background: #f9f9f9;
+  color: #222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
