@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import localData from '../../data/data.json';
 
 function ProjectDetail() {
   const { id } = useParams();
-  const [isImageExpanded, setIsImageExpanded] = useState(false);
   const project = localData.projects.find((item) => item.id === Number(id)) || null;
 
   if (!project) return <p>Project not found.</p>;
@@ -13,12 +12,7 @@ function ProjectDetail() {
     <div>
       <div className="project-detail-page">
         <div className="project-detail-card">
-          <img
-            src={project.image}
-            alt={project.title}
-            className={`project-detail-image${isImageExpanded ? ' project-detail-image-expanded' : ''}`}
-            onClick={() => setIsImageExpanded((prev) => !prev)}
-          />
+          <img src={project.image} alt={project.title} className="project-detail-image" />
 
           <div className="project-detail-content">
             <h2>{project.title}</h2>

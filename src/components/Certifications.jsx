@@ -36,12 +36,17 @@ function Certifications() {
   }, []);
 
   return (
-    <section id="certifications" className="certifications">
+    <section id="certifications" className="certifications reveal">
       <h2>Certifications</h2>
 
       <div className="cert-container">
-        {certifications.map((cert) => (
-          <Link to={`/certifications/${cert.id}`} key={cert.id} className="cert-card-link">
+        {certifications.map((cert, index) => (
+          <Link
+            to={`/certifications/${cert.id}`}
+            key={cert.id}
+            className="cert-card-link reveal"
+            style={{ transitionDelay: `${index * 100}ms` }}
+          >
             <div className="cert-card">
               <img src={cert.image} alt={cert.title} />
 

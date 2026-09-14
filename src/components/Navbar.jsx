@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,34 +39,59 @@ function Navbar() {
           </div>
           <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
             <li>
-              <Link to="/" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/"
+                end
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/about"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/skills" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/skills"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+              >
                 Skills
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/projects"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+              >
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/certifications" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/certifications"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+              >
                 Certifications
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/contact"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
             <li>
               <a href="/resume_jaison.pdf" download>
