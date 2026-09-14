@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 function Contact() {
   const [form, setForm] = useState({
@@ -24,20 +24,17 @@ function Contact() {
       <div className="contact-container">
         <div className="contact-info">
           <h3>Get in Touch</h3>
-
           <p>
             <FaEnvelope /> jaison2005k@gmail.com
           </p>
           <p>
-            <FaPhone /> +91 9751256119
+            <FaPhone /> +91 7598470425
           </p>
-
+          <p>
+            <FaWhatsapp /> +91 9751256119
+          </p>
           <div className="social-links">
-            <a
-              href="https://github.com/Jaison-A"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/Jaison-A" target="_blank" rel="noreferrer">
               <FaGithub /> GitHub
             </a>
 
