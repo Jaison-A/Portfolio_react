@@ -6,8 +6,12 @@ function Layout() {
   return (
     <>
       <Navbar />
-      <Outlet />
-      <Footer />
+      <div className="page-shell">
+        <div className="page-content">
+          <Outlet />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }

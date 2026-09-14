@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -14,13 +15,13 @@ function Home() {
           </p>
 
           <div className="home-buttons">
-            <a href="../public/resume_jaison.pdf" download>
-              <button className="btn">Download Resume</button>
+            <a href="/resume_jaison.pdf" download className="btn">
+              Download Resume
             </a>
 
-            <a href="#contact">
-              <button className="btn secondary">Contact Me</button>
-            </a>
+            <Link to="/contact" className="btn secondary">
+              Contact Me
+            </Link>
           </div>
         </div>
       </div>

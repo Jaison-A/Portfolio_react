@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import localData from '../../data/data.json';
 
 function ProjectDetail() {
   const { id } = useParams();
-  const [project, setProject] = useState(null);
+  const [isImageExpanded, setIsImageExpanded] = useState(false);
+  const project = localData.projects.find((item) => item.id === Number(id)) || null;
 
-  useEffect(() => {
-    fetch(`http://localhost:8000/projects/${id}`)
-      .then((res) => res.json())
-      .then((data) => setProject(data))
-      .catch((err) => console.log(err));
-  }, [id]);
-
-  if (!project) return <p>Loading...</p>;
+  if (!project) return <p>Project not found.</p>;
 
   return (
     <div>
-      <div className="project-detail">
-        <div className="project-card">
-          <img src={project.image} alt={project.title} />
+      <div className="project-detail-page">
+        <div className="project-detail-card">
+          <img
+            src={project.image}
+            alt={project.title}
+            className={`project-detail-image${isImageExpanded ? ' project-detail-image-expanded' : ''}`}
+            onClick={() => setIsImageExpanded((prev) => !prev)}
+          />
 
-          <div className="project-content">
+          <div className="project-detail-content">
             <h2>{project.title}</h2>
 
             <p className="description">{project.description}</p>
@@ -30,24 +30,14 @@ function ProjectDetail() {
             </p>
 
             <div className="buttons">
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn github"
-                >
+              {project.github && project.github !== '#' && (
+                <a href={project.github} target="_blank" rel="noreferrer" className="btn github">
                   GitHub
                 </a>
               )}
 
-              {project.live && (
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn live"
-                >
+              {project.live && project.live !== '#' && (
+                <a href={project.live} target="_blank" rel="noreferrer" className="btn live">
                   Live Demo
                 </a>
               )}

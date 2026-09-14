@@ -1,6 +1,6 @@
 /* ===== PROJECT DETAIL (DEFAULT = DARK MODE) ===== */
 
-.project-detail {
+.project-detail-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,42 +9,56 @@
   min-height: 100vh;
 }
 
-.project-card {
+.project-detail-card {
   display: flex;
-  max-width: 900px;
+  flex-direction: column;
+  width: min(900px, 100%);
   background: #1f1f1f;
   color: #eee;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 173, 181, 0.2);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* Image */
-.project-card img {
+.project-detail-card img {
   width: 100%;
-  height: 250px;
-  max-height: 300px;
+  max-width: none;
+  min-height: 320px;
+  max-height: 420px;
   object-fit: cover;
   transition: 0.3s;
+  display: block;
+  cursor: pointer;
 }
 
-.project-card:hover img {
-  transform: scale(1.05);
+.project-detail-image-expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(1200px, 90vw);
+  height: 90vh;
+  max-height: none;
+  object-fit: contain;
+  z-index: 1000;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.95);
+  padding: 20px;
 }
 
 /* Content */
-.project-content {
-  padding: 20px;
+.project-detail-content {
+  padding: 24px 28px 28px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.project-content h2 {
+.project-detail-content h2 {
   margin-bottom: 10px;
   color: #fff;
 }
@@ -96,17 +110,18 @@
 
 /* ===== LIGHT MODE ===== */
 
-body.light-mode .project-detail {
+body.light-mode .project-detail-page {
   background: #f4f6f8;
 }
 
-body.light-mode .project-card {
+body.light-mode .project-detail-card {
   background: #fff;
   color: #222;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.06);
 }
 
-body.light-mode .project-content h2 {
+body.light-mode .project-detail-content h2 {
   color: #222;
 }
 
@@ -130,4 +145,23 @@ body.light-mode .live {
 }
 body.light-mode .live:hover {
   background: #0b5aae;
+}
+
+@media (max-width: 768px) {
+  .project-detail-page {
+    padding: 24px 16px;
+  }
+
+  .project-detail-card {
+    flex-direction: column;
+  }
+
+  .project-detail-card img {
+    max-width: none;
+    min-height: 240px;
+  }
+
+  .project-detail-content {
+    padding: 22px 18px 24px;
+  }
 }

@@ -1,6 +1,7 @@
 {
   "certification": [
     {
+      "id": 1,
       "title": "Frontend Development Training",
       "issuer": "Elocias Software Pvt Ltd",
       "date": 2025,
@@ -8,6 +9,7 @@
       "image": "../public/Internship-Elocias.jpg"
     },
     {
+      "id": 2,
       "title": "Introduction to Internet of Things",
       "issuer": "NPTEL, IIT Kharagpur",
       "date": 2025,
@@ -15,6 +17,7 @@
       "image": "../public/iot_nptel.jpeg"
     },
     {
+      "id": 3,
       "title": "C Programming Basics: Flow Control, Variables, and Pointers",
       "issuer": "LinkedIn Learning",
       "date": 2024,
@@ -22,6 +25,7 @@
       "image": "../public/c-linkedin.jpeg"
     },
     {
+      "id": 4,
       "title": "C Programming",
       "issuer": "Programming Hero",
       "date": 2024,
@@ -29,6 +33,7 @@
       "image": "../public/c-pgHero.jpeg"
     },
     {
+      "id": 5,
       "title": "Learn HTML",
       "issuer": "Codeliber",
       "date": 2025,
@@ -36,6 +41,7 @@
       "image": "../public/html-codeliber.jpeg"
     },
     {
+      "id": 6,
       "title": "Java Training",
       "issuer": "Spoken Tutorial Project, IIT Bombay",
       "date": 2024,
@@ -43,6 +49,7 @@
       "image": "../public/java-iitbombay.jpeg"
     },
     {
+      "id": 7,
       "title": "Python 3.4.3 Training",
       "issuer": "Spoken Tutorial Project, IIT Bombay",
       "date": 2024,
@@ -50,6 +57,7 @@
       "image": "../public/python-iitbomby.jpeg"
     },
     {
+      "id": 8,
       "title": "Certified Entry-Level Python Programmer (PCEP-30-02) Cert Prep",
       "issuer": "LinkedIn Learning",
       "date": 2024,
@@ -57,6 +65,7 @@
       "image": "../public/python-linkedin.jpeg"
     },
     {
+      "id": 9,
       "title": "Python Course 2023",
       "issuer": "Programming Hero",
       "date": 2024,
@@ -72,9 +81,10 @@
       "description": "A responsive watch product website built using HTML, CSS, and JavaScript.",
       "tech": "HTML, CSS, JavaScript",
       "image": "https://picsum.photos/200/300",
-      "github": "#",
-      "live": "#"
+      "github": "http:localhot/",
+      "live": "localhost:/note"
     },
+
     {
       "id": 2,
       "title": "Portfolio Website",
@@ -86,18 +96,18 @@
     },
     {
       "id": 3,
-      "title": "Portfolio Website",
-      "description": "Personal portfolio website to showcase my skills and projects.",
-      "tech": "React, CSS",
+      "title": "CampusHub",
+      "description": "A full-stack college management platform designed to centralize academic resources and simplify communication between students, teachers, and administrators. It includes role-based access, notes and assignments management, progress tracking, and secure authentication.",
+      "tech": "React, Vite, Tailwind CSS, Node.js, Express.js, MongoDB, JWT",
       "image": "https://picsum.photos/200/300",
       "github": "#",
       "live": "#"
     },
     {
       "id": 4,
-      "title": "Portfolio Website",
-      "description": "Personal portfolio website to showcase my skills and projects.",
-      "tech": "React, CSS",
+      "title": "Instagram React Clone",
+      "description": "A responsive social media web application inspired by Instagram, built to practice modern React development. It includes user posts, interactions, API-based data handling, and a component-based interface.",
+      "tech": "React, Vite, JavaScript, Bootstrap, Axios, JSON Server",
       "image": "https://picsum.photos/200/300",
       "github": "#",
       "live": "#"

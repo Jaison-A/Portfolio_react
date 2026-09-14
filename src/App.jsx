@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Home from './components/Home';
 import ProjectDetail from './components/ProjectDetail';
+import CertificationDetail from './components/CertificationDetail';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: '/projects', element: <Projects /> },
       { path: '/projects/:id', element: <ProjectDetail /> },
       { path: '/certifications', element: <Certifications /> },
+      { path: '/certifications/:id', element: <CertificationDetail /> },
       { path: '/contact', element: <Contact /> },
     ],
     errorElement: <h1>404 error page not fount</h1>,

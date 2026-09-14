@@ -69,7 +69,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a href="../public/resume_jaison.pdf" download>
+              <a href="/resume_jaison.pdf" download>
                 <button className="resume-btn">Download CV</button>
               </a>
             </li>

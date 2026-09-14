@@ -19,12 +19,16 @@
   padding: 20px;
   border-radius: 10px;
   text-align: left;
-  transition: 0.3s;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 173, 181, 0.2);
+  transform: scale(1.01);
+  box-shadow: 0 12px 26px rgba(0, 173, 181, 0.16);
 }
 
 .project-card img {
@@ -34,11 +38,6 @@
   border-radius: 8px;
   margin-bottom: 15px;
   display: block;
-  transition: 0.3s;
-}
-
-.project-card:hover img {
-  transform: scale(1.05);
 }
 
 .project-links {
